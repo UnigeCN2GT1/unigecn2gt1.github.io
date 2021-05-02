@@ -897,7 +897,6 @@
         }, {
           key: "onNextQuestion",
           value: function onNextQuestion() {
-            this.shuffleArray(this.quiz[this.currentQuestion].responses);
             this.currentQuestion += 1;
             this.selectedAnswer = -1;
             this.reasonShown = false;
