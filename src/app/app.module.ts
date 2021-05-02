@@ -7,7 +7,6 @@ import { MainBodyComponent } from './content/common-ui/main-body/main-body.compo
 import { HomeComponent } from './content/home/home.component';
 import { ServiceLocator } from './utils/service.locator';
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { QuizBodyComponent } from './content/common-ui/quiz-body/quiz-body.component';
 import { QuizMainComponent } from './content/quiz-main/quiz-main.component';
