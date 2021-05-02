@@ -21,7 +21,6 @@ export class QuizMainComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.quiz[this.lang][1]);
     this.observable = interval(1000).pipe(startWith(0)).subscribe({
       next: async () => {
         this.numberOfQuizzes = Object.keys(quiz[this.lang]).length;
