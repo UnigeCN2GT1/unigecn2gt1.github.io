@@ -28,6 +28,9 @@ export class QuizBodyComponent implements OnInit {
   }
 
   onClick(event, index) {
+    if (this.reasonShown) {
+      return;
+    }
     const responses = document.getElementById('responses');
     Array.from(responses.children).forEach(x => x.classList.remove('alert-primary'));
 

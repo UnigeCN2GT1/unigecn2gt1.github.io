@@ -16,7 +16,12 @@
       <ng-template #elseTemplate>
         <div class="mt-3"><u>Reason:</u></div>
         <div class="text-justify">{{ this.quiz[currentQuestion - 1].reason }}</div>
-        <div class="btn btn-primary mt-3" (click)="this.onNextQuestion()">Next Question</div>
+        <ng-container *ngIf="currentQuestion < numberOfQuestions; else elseTemplate">
+          <div class="btn btn-primary mt-3" (click)="this.onNextQuestion()">Next Question</div>
+        </ng-container>
+        <ng-template #elseTemplate>
+          <div class="btn btn-primary mt-3" (click)="this.onNextQuestion()">See results</div>
+        </ng-template>
       </ng-template>
     </div>
   </ng-container>
