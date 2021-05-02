@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, PreloadAllModules, Route } from '@angular/router';
 
-import { HomeComponent } from './content/home/home.component';
-
 import { NotFound404Component } from './content/not-found404/not-found404.component';
 import { QuizMainComponent } from './content/quiz-main/quiz-main.component';
 
@@ -15,10 +13,6 @@ const routes: Route[] = [
   },
   {
     path: 'home',
-    component: HomeComponent,
-  },
-  {
-    path: 'quiz',
     component: QuizMainComponent,
   },
   {
