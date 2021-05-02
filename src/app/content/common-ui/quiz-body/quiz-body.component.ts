@@ -56,7 +56,6 @@ export class QuizBodyComponent implements OnInit {
   }
 
   onNextQuestion(): void {
-    this.shuffleArray(this.quiz[this.currentQuestion].responses);
     this.currentQuestion += 1;
     this.selectedAnswer = -1;
     this.reasonShown = false;
