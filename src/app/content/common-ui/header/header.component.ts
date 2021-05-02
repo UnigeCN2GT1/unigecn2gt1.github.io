@@ -1,4 +1,3 @@
-import { Router, Event, RouterEvent } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 /**
@@ -20,15 +19,10 @@ export class HeaderComponent implements OnInit {
    *
    * @param router The Router to observe the url path from.
    */
-  constructor(private router: Router) { }
+  constructor() { }
 
   /** Initialises the component. */
   ngOnInit(): void {
-    this.router.events.subscribe((event: Event) => {
-      if (event instanceof RouterEvent) {
-        this.currentPath = event.url;
-      }
-    });
   }
 
 }

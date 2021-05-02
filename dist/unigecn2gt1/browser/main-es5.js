@@ -256,13 +256,7 @@
       /* harmony import */
 
 
-      var _angular_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-      /*! @angular/router */
-      "tyNb");
-      /* harmony import */
-
-
-      var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
       "fXoL");
       /**
@@ -278,12 +272,10 @@
          *
          * @param router The Router to observe the url path from.
          */
-        function HeaderComponent(router) {
+        function HeaderComponent() {
           _classCallCheck(this, HeaderComponent);
 
-          this.router = router;
           /** What page is currently loaded, used to highlight the navbar. */
-
           this.currentPath = '/home';
         }
         /** Initialises the component. */
@@ -291,25 +283,17 @@
 
         _createClass(HeaderComponent, [{
           key: "ngOnInit",
-          value: function ngOnInit() {
-            var _this = this;
-
-            this.router.events.subscribe(function (event) {
-              if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterEvent"]) {
-                _this.currentPath = event.url;
-              }
-            });
-          }
+          value: function ngOnInit() {}
         }]);
 
         return HeaderComponent;
       }();
 
       HeaderComponent.ɵfac = function HeaderComponent_Factory(t) {
-        return new (t || HeaderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_0__["Router"]));
+        return new (t || HeaderComponent)();
       };
 
-      HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
+      HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
         type: HeaderComponent,
         selectors: [["app-header"]],
         decls: 5,
@@ -317,23 +301,23 @@
         consts: [[1, "w-100", "row", "m-0", "py-0", "px-3", "d-flex", "flex-row", "justify-content-between"], [1, "ml-2", "text-center"]],
         template: function HeaderComponent_Template(rf, ctx) {
           if (rf & 1) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "header");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "header");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 0);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 0);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "h1", 1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h1", 1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "a");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "a");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4, " CN2GT1 ");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " CN2GT1 ");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           }
         },
         styles: ["header[_ngcontent-%COMP%] {\n  z-index: 997;\n  transition: all 0.5s ease-in-out;\n  padding: 14px 0;\n  background: #1e1146;\n}\n\nh1[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: white;\n  text-decoration: none;\n}\n\nli.active[_ngcontent-%COMP%] {\n  background: #27165b;\n  border-radius: 5px;\n}\n\nli[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  color: #60baff !important;\n}\n\nli[_ngcontent-%COMP%]:not(.active)   a[_ngcontent-%COMP%]:hover {\n  text-shadow: 0 0 1px #1e1146, 0 0 10px #0000FF;\n  font-weight: bold;\n}\n\n@media screen and (max-width: 768px) {\n  header[_ngcontent-%COMP%] {\n    padding: 4px 0 !important;\n  }\n  header[_ngcontent-%COMP%]   nav[_ngcontent-%COMP%] {\n    width: 100%;\n  }\n  header[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    margin: 0 auto !important;\n    margin-bottom: 0.25rem !important;\n  }\n  header[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%] {\n    display: flex;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n  header[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    padding: 4px 10px !important;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFwuLlxcaGVhZGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsWUFBQTtFQUNBLGdDQUFBO0VBQ0EsZUFBQTtFQUNBLG1CQUFBO0FBQ0Y7O0FBR0U7RUFDRSxZQUFBO0VBQ0EscUJBQUE7QUFBSjs7QUFJQTtFQUNFLG1CQUFBO0VBQ0Esa0JBQUE7QUFERjs7QUFLRTtFQUNFLHlCQUFBO0FBRko7O0FBT0U7RUFDRSw4Q0FBQTtFQUNBLGlCQUFBO0FBSko7O0FBU0E7RUFDRTtJQUNFLHlCQUFBO0VBTkY7RUFRRTtJQUNFLFdBQUE7RUFOSjtFQVVJO0lBQ0UseUJBQUE7SUFDQSxpQ0FBQTtFQVJOO0VBWUU7SUFFRSxhQUFBO0lBQ0EsdUJBQUE7SUFDQSxlQUFBO0VBWEo7RUFjTTtJQUNFLDRCQUFBO0VBWlI7QUFDRiIsImZpbGUiOiJoZWFkZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJoZWFkZXIge1xyXG4gIHotaW5kZXg6IDk5NztcclxuICB0cmFuc2l0aW9uOiBhbGwgMC41cyBlYXNlLWluLW91dDtcclxuICBwYWRkaW5nOiAxNHB4IDA7XHJcbiAgYmFja2dyb3VuZDogIzFlMTE0NjtcclxufVxyXG5cclxuaDEge1xyXG4gIGEge1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG4gIH1cclxufVxyXG5cclxubGkuYWN0aXZlIHtcclxuICBiYWNrZ3JvdW5kOiBsaWdodGVuKCRjb2xvcjogIzFlMTE0NiwgJGFtb3VudDogNSk7XHJcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG59XHJcblxyXG5saSB7XHJcbiAgYTpob3ZlciB7XHJcbiAgICBjb2xvcjogIzYwYmFmZiAhaW1wb3J0YW50O1xyXG4gIH1cclxufVxyXG5cclxubGk6bm90KC5hY3RpdmUpIHtcclxuICBhOmhvdmVyIHtcclxuICAgIHRleHQtc2hhZG93OiAwIDAgMXB4ICMxZTExNDYsIDAgMCAxMHB4ICMwMDAwRkY7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICB9XHJcbn1cclxuXHJcblxyXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA3NjhweCkge1xyXG4gIGhlYWRlciB7XHJcbiAgICBwYWRkaW5nOiA0cHggMCAhaW1wb3J0YW50O1xyXG5cclxuICAgIG5hdiB7XHJcbiAgICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgfVxyXG5cclxuICAgIGRpdiB7XHJcbiAgICAgIGgxIHtcclxuICAgICAgICBtYXJnaW46IDAgYXV0byAhaW1wb3J0YW50O1xyXG4gICAgICAgIG1hcmdpbi1ib3R0b206IC4yNXJlbSAhaW1wb3J0YW50O1xyXG4gICAgICB9XHJcbiAgICB9XHJcblxyXG4gICAgdWwge1xyXG5cclxuICAgICAgZGlzcGxheTpmbGV4O1xyXG4gICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgICAgZmxleC13cmFwOiB3cmFwO1xyXG5cclxuICAgICAgbGkge1xyXG4gICAgICAgIGEge1xyXG4gICAgICAgICAgcGFkZGluZzogNHB4IDEwcHggIWltcG9ydGFudDtcclxuICAgICAgICB9XHJcbiAgICAgIH1cclxuICAgIH1cclxuICB9XHJcbn1cclxuXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDQwMHB4KSB7XHJcbn1cclxuIl19 */"]
@@ -508,7 +492,7 @@
         _createClass(MetaService, [{
           key: "setTags",
           value: function setTags(url, title, imgUrl, imgWidth, imgHeight, keywords, description, authorName, authorSocial) {
-            var _this2 = this;
+            var _this = this;
 
             this.title.setTitle(title);
             [{
@@ -563,7 +547,7 @@
               name: 'twitter:image:height',
               content: "".concat(imgHeight)
             }].forEach(function (x) {
-              return _this2.meta.updateTag(x);
+              return _this.meta.updateTag(x);
             });
           }
         }]);
@@ -1416,11 +1400,11 @@
         _createClass(QuizMainComponent, [{
           key: "ngOnInit",
           value: function ngOnInit() {
-            var _this3 = this;
+            var _this2 = this;
 
             this.observable = Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["interval"])(1000).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["startWith"])(0)).subscribe({
               next: function next() {
-                return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this3, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+                return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this2, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
                   return regeneratorRuntime.wrap(function _callee$(_context) {
                     while (1) {
                       switch (_context.prev = _context.next) {
