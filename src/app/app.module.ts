@@ -26,7 +26,6 @@ import { NumberToArrayPipe } from './pipes/number-to-array.pipe';
   imports: [
     BrowserTransferStateModule,
     BrowserModule.withServerTransition({ appId: 'unigecn2gt1' }),
-    AppRoutingModule,
     HttpClientModule
   ],
   providers: [ ],
