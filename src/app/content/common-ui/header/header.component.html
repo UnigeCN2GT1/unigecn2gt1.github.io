@@ -1,0 +1,16 @@
+<header>
+  <div class="w-100 row m-0 py-0 px-3 d-flex flex-row justify-content-between">
+    <h1 class="ml-2 text-center">
+      <a [routerLink]="['/home']">
+        CN2GT1
+      </a>
+    </h1>
+
+    <nav>
+      <ul class="d-flex flex-row flex-wrap">
+        <li [ngClass]="{'active': (this.currentPath.localeCompare('/home') == 0) || (this.currentPath.localeCompare('/') == 0)}"><a href="/home">Home</a></li>
+        <li [ngClass]="{'active': (this.currentPath.localeCompare('/quiz')) == 0}"><a href="/quiz">Quiz</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
