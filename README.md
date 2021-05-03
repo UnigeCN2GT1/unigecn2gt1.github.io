@@ -8,6 +8,17 @@ cd unigecn2gt1.github.io
 npm install
 ```
 
+## Deploying
+
+```bash
+ng build prod
+cp dist/unigecn2gt1/browser/index.html dist/unigecn2gt1/browser/404.html
+git add .
+git commit
+git push
+./update-gh-pages.sh
+```
+
 ## Table of Contents
 
 - [Cloning the repository](#cloning-the-repository)
