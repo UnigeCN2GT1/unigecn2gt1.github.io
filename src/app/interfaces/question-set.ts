@@ -10,4 +10,5 @@ export interface QuestionSet {
 
   correct: number;
   reason: string;
+  image?: string;
 }

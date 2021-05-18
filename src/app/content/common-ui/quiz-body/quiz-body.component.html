@@ -1,5 +1,8 @@
 <div class="quiz-container">
   <ng-container *ngIf="this.currentQuestion != this.numberOfQuestions + 1; else elseTemplate">
+    <div class="d-flex justify-content-center">
+      <img src="/assets/images/{{ this.quiz[currentQuestion-1].image }}.png" alt="{{ this.quiz[currentQuestion-1].image }} icon" width="100"/>
+    </div>
     <h3 class="text-center">Question {{ this.currentQuestion }} / {{ this.numberOfQuestions }}</h3>
 
     <p class="px-1 py-0 text-justify">{{ this.quiz[currentQuestion-1].context }}</p>
@@ -26,7 +29,13 @@
     </div>
   </ng-container>
   <ng-template #elseTemplate>
-    <h3 class="text-center">Results</h3>
-    <p>Your score is {{ Math.round(this.correctAnswers / this.numberOfQuestions * 100) }}%</p>
+    <div class="d-flex justify-content-center">
+      <img src="/assets/images/{{ getColor(Math.round(this.correctAnswers / this.numberOfQuestions * 100)) }}.png" alt="{{ getColor(Math.round(this.correctAnswers / this.numberOfQuestions * 100)) }} icon" width="100"/>
+    </div>
+    <div class="d-flex flex-column justify-content-center">
+      <h3 class="text-center">Results</h3>
+      <p class="text-center px-0">Your score is:</p>
+      <span class="text-center large">{{ Math.round(this.correctAnswers / this.numberOfQuestions * 100) }}%</span>
+    </div>
   </ng-template>
 </div>

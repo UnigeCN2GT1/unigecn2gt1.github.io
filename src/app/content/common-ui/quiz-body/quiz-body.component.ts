@@ -20,8 +20,6 @@ export class QuizBodyComponent implements OnInit {
   correctAnswers: number = 0;
   Math = Math;
 
-  constructor() { }
-
   ngOnInit(): void {
     this.numberOfQuestions = this.quiz.length;
     this.shuffleArray(this.quiz);
@@ -69,5 +67,17 @@ export class QuizBodyComponent implements OnInit {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
-}
+  }
+
+  getColor(score: number): string {
+    if (score >= 75) {
+      return 'result-green';
+    } else if (score >= 50) {
+      return 'result-orange';
+    } else if (score >= 25) {
+      return 'result-red-light';
+    } else {
+      return 'result-red';
+    }
+  }
 }
